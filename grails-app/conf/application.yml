@@ -100,12 +100,13 @@ dataSource:
     username: user2   
     # db.password IS ADDED TO THE GRAILS_OPTS. RUN THE FOLLOWING COMMAND IN THE COMMAND WINDOW (UPDATING XXX)
     # set GRAILS_OPTS="-Ddb.password=XXXX"
-    password: '${db.password}' 
+    #password: '${db.password}' 
+    password: P1neApple
 
 environments:
     development:
         dataSource:
-            dbCreate: create-drop
+            dbCreate: update
      #       url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
             url: jdbc:mysql://localhost:3306/grailsapp
     test:
